@@ -70,3 +70,4 @@ end
 
 - tests will now begin and results of the pre requisite test will generate automatically.
 
+- 9 tests should pass and no failure messages should appear in the terminal while it runs
