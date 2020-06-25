@@ -12,4 +12,4 @@ Vagrant.configure("2") do |config|
   # running a shell provision
   config.vm.provision "shell", path: "environment/provision.sh"
 
-end/
+end

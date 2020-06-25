@@ -1,7 +1,7 @@
 {
   "name": "solution-code",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app is intended for use with the Sparta Global Devops Stream as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch.",
   "main": "index.js",
   "scripts": {
     "postinstall": "node seeds/seed.js",
@@ -26,5 +26,8 @@
     "mocha": "^3.1.2",
     "jenkins-mocha": "^3.0.4",
     "mocha-junit-reporter": "^1.12.1"
+  },
+  "directories": {
+    "test": "test"
   }
 }
