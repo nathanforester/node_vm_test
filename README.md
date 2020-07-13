@@ -18,24 +18,26 @@ Someone from the team is hadding you code. Don't just accpet, ask for context. E
 - specific packages or versions that don't work? 
 - any other info? 
 
-##### response you got today!
-- amazing <person> thank you for asking! Well we have a good readme.
-- it's all built on js node (ohhh okay look out for this terminology)
-- and there are some test you can run from the host machine. 
-- just bundle install and run the rake file! (smile)
+### Running
 
-I want to create machine and set up a work app in it. 
-I want it in a VM because it will be a standardize environment.
+- Open a bash terminal in the destination path folder, saved to your hard drive
+- This is the same folder you have done a 'git pull' to
+- type in the command 'vagrant ssh'
+- After a short time, you should be in the virtual environment machine
+- Follow these commands step-by-step:
+  ````cd home/ubuntu/app/seeds/
+      seed node.js
+      cd home/ubuntu/app/
+      pm2 start app.js*````
+      
+- If the 'pm2 start' command does not work, try 'npm start'
+- if the above does not work, try 'npm forever'
+- if the above still does not work, try 'npm install forever' then 'npm start'
 
-What steps do I need to take?
+- Access a web browser (preferably FireFox or Chrome)
+- type in 'development.local:80' or 'development.local:3000'. Ideally, you should be testing through port 80, as this is the standard HTTP port. The standard port for HTTPS is 443.
 
-Well I know the enviroment will be: 
-- ubuntu/xenial64 (done)
-- I will need nodejs 
-- check how to install stuff in it (the dependencies)
-- I want it on port 80
-- I will need a reverse proxy to get my app talking on port 80 
-- I will need my app in my vm! (right?) so I can install and run it's code 
+- If the company logo appears, the app is working properly
 
 
 
